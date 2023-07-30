@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Mazurik </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="wrapper--grid">
+            <header>
+                <nav class="header__line"> 
+                    <div class="header__burger--wrapper"> 
+                        <a  onclick="f(this)"><img src="./img/burger.png" class="header__burger"></a>
+                    </div>
+                    <div class="header__search--wrapper">
+                        <form>
+                            <input type="text" name="search" class="header__search">
+                        </form>
+                        <div class="header__dandruff--wrapper"> 
+                            <img src="./img/dandruff.png" class="header__dandruff">
+                        </div>
+                    </div>
+                </nav>
+                <div id="popup" class="header__popup--wrapper">
+                    <div class="header__popup">
+                        <ul class="ul__wrapper">
+                            <li><a>Рецепти</a></li>
+                            <li><a>Комікси</a></li>
+                            <li><a>Рандмний рецепт</a></li>
+                            <li><a>Запропонувати рецепт</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+            <main >
+                <section class="main--wrapper">
+                    <h2>Мазурик</h2>
+                    <p class="main__description">Архів гастрономічних скарбів</p>
+                </section>
+                <section class="main--wrapper">
+                    <div>
+                        <section class="main__recipe--wrapper">
+                            <div>
+                                <img src="./img/barushnik.png" class="main__recipe__pic">
+                            </div>
+                            <div>
+                                <p class="main__recipe__name">Буришник</p>
+                                <p  class="main__recipe__description"> Буришник - це смачна українська страва, яка приготовлюється картоплі та нагадує зрази.
+                                     Назва походить від слова "буришка", так називають в Карпатах картоплю</p>
+                            </div>
+                            <div class="main__recipe__elements">
+                                <ul> Інградієнти:
+                                    <li> 1кг картоплі</li>
+                                    <li> 70г кукурудзяної крупи</li>
+                                    <li> 15г пшеничного борошна</li>
+                                    <li> 1 яйце</li>
+                                    <li> 100г вершокового масла</li>
+                                </ul>
+                            </div>
+                            <div  class="main__cloch" >
+                                <img src="./img/cloch.png" >
+                                <span> 1 година</span>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+            </main>
+            <footer>
+                <div class="footer__wrapper">
+                    <section class="footer__messenger--wrapper">
+                        <div> 
+                            <a> <img src="./img/img 1.png" > </a>
+                        </div>
+                        <div> 
+                            <a> <img src="./img/img 2.png" > </a>
+                        </div>
+                        <div> 
+                            <a> <img src="./img/img 3.png" > </a>
+                        </div>
+                    </section>
+                    <p class="footer__gmail">Звротній зв'язок:</p>
+                    <section class="footer__gmail--wrapper">
+                        <p> blabla@gmail.com </p>
+                    </section>
+                </div>
+            </footer>
+        </div>
+        <script>
+
+           function f(event){
+            console.log(event);
+            event.preventDefault();
+            let a = document.getElementById("popup");
+                a.classList.toggle("visible");
+            }   
+        </script>
+    </body>
+</html>
